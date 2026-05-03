@@ -1,0 +1,234 @@
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Hero Section */
+.profile-hero {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 32px;
+}
+
+.avatar-display {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 0 30px rgba(139, 92, 246, 0.4);
+  border: 3px solid var(--glass-border);
+}
+
+.avatar-emoji {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.profile-hero-info {
+  flex: 1;
+}
+
+.profile-hero-info h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.profile-email {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.profile-level-badge {
+  display: inline-flex;
+  padding: 4px 14px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+  letter-spacing: 0.5px;
+}
+
+.xp-bar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 400px;
+}
+
+.xp-bar-track {
+  height: 8px;
+  background: var(--bg-secondary);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.xp-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+  border-radius: 999px;
+  transition: width 0.5s ease;
+}
+
+.xp-label {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+/* Grid Layout */
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 24px;
+}
+
+.profile-card {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.profile-card h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.profile-card > p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+/* Avatar Grid */
+.avatar-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.avatar-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 8px 4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.avatar-option:hover {
+  background: rgba(139, 92, 246, 0.08);
+  border-color: var(--glass-border);
+}
+
+.avatar-option.selected {
+  border-color: var(--av-color, var(--accent-primary));
+  background: rgba(139, 92, 246, 0.1);
+  box-shadow: 0 0 12px var(--av-color, var(--accent-glow));
+}
+
+.av-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.av-label {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  text-align: center;
+}
+
+.avatar-option.selected .av-label {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Badge Roadmap */
+.badge-roadmap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.badge-category-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.badge-cat-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.badge-cat-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.badge-cat-count {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-left: auto;
+}
+
+.badge-tiers-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.badge-tier-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border: 1.5px solid var(--glass-border);
+  color: var(--text-secondary);
+  cursor: default;
+  transition: all 0.2s;
+}
+
+.badge-tier-chip.earned {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.badge-tier-chip.locked {
+  opacity: 0.5;
+}
+
+.badge-progress-bar {
+  height: 5px;
+  background: var(--bg-secondary);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.badge-progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.6s ease;
+  opacity: 0.8;
+}

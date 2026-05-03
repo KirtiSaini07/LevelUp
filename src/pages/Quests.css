@@ -1,0 +1,104 @@
+.quests-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.quests-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-quest-form {
+  display: flex;
+  gap: 12px;
+  background: var(--bg-secondary);
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.input-field {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 2px var(--accent-glow);
+}
+
+.quest-filters {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.quest-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.quest-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  transition: all 0.2s ease;
+}
+
+.quest-card:hover {
+  transform: translateX(4px);
+  border-color: var(--accent-primary);
+}
+
+.quest-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.quest-title {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--text-primary);
+}
+
+.quest-desc {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.quest-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.xp-reward {
+  color: #f59e0b;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+}
