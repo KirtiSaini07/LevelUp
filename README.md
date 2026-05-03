@@ -1,6 +1,6 @@
 # ⚔️ LevelUp: The Productivity Hub
 
-**LevelUp** is a gamified task management application that transforms your daily productivity into an immersive RPG adventure. Turn your chores into Quests, gain XP for every accomplishment, and watch your character grow as you master your real-life goals.
+**LevelUp** is a gamified task management application that transforms your daily productivity into a small level RPG adventure. Turn your chores into Quests, gain XP for every accomplishment, and watch your character grow as you master your real-life goals.
 
 ---
 
