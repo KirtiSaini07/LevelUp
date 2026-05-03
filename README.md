@@ -1,20 +1,67 @@
-<<<<<<< HEAD
-# React + Vite
+# ⚔️ LevelUp: The Productivity Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**LevelUp** is a gamified task management application that transforms your daily productivity into an immersive RPG adventure. Turn your chores into Quests, gain XP for every accomplishment, and watch your character grow as you master your real-life goals.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Key Features
 
-## React Compiler
+### 🏰 Character Dashboard
+- **Visual Progress**: Track your character's Level, XP, and stats in real-time.
+- **Dynamic Insights**: Interactive charts powered by **Recharts** to visualize your productivity trends and consistency.
+- **Wisdom Scroll**: Get daily AI-powered inspiration and productivity tips to keep your momentum high.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 📜 Epic Quests (Task Management)
+- **Categorized Tasks**: Organize your life into different skill trees (Health, Work, Personal, etc.).
+- **Persistent Progress**: Your journey is saved across sessions, ensuring every bit of effort counts.
 
-## Expanding the ESLint configuration
+### 🧪 Advanced Systems
+- **Level-Up Experience**: Trigger custom celebratory overlays when you reach new milestones.
+- **Notes & Grimoire**: A dedicated space for long-form thoughts, documentation, and world-building.
+- **Calendar Visualization**: View your upcoming deadlines and "raid" dates in a clean, interactive calendar.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# LevelUp
->>>>>>> ed201ee1738db216308ddba2987e2045a9c1e7f4
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd LevelUp
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Access the Citadel**
+   Open your browser and navigate to `http://localhost:5173`
+
+---
+
+## 📂 Project Structure
+
+```
+LevelUp/
+├── src/
+│   ├── components/    # Reusable UI components (Header, Sidebar, Layout)
+│   ├── context/       # Auth, Task, and User state management
+│   ├── pages/         # Main views (Dashboard, Quests, Notes, Profile)
+│   ├── utils/         # Helper functions and constants
+│   ├── assets/        # Images, fonts, and static assets
+│   └── index.css      # Global styles and design system
+├── public/            # Static data and public files
+└── package.json       # Project dependencies and scripts
+```
